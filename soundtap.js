@@ -285,7 +285,7 @@ var soundMap = {
     'X': {
         color: 'white',
         sound: new Howl({
-            src: ['']
+            src: ['audio/Guitar/perc4.mp3']
         })
     },
     'C': {
