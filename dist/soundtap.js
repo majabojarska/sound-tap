@@ -642,7 +642,7 @@ var soundMap = {
             src: ['audio/Guitar/thump1.mp3']
         })
     }
-    
+
 }
 
 Howler.volume(1);
@@ -650,9 +650,10 @@ Howler.volume(1);
 var objects = [];
 
 function onKeyDown(event) {
-    // console.log("onKeyDown | code " + event);
+    //console.log("onKeyDown | code " + event.character);
     if (soundMap[event.character].sound._src[0].length > 0) {
-        // console.log(soundMap[event.character].sound);
+        console.log("'" + event.character + "' : '" + soundMap[event.character].sound._src + "'");
+
         soundMap[event.character].sound.play();
 
         var maxPoint = new Point(view.size._width, view.size._height);
@@ -686,6 +687,6 @@ function randomRgbColor() {
     var r = Math.random() * 255;
     var g = Math.random() * 255;
     var b = Math.random() * 255;
-    var // colorString = "rgb(" + r + ", " + g + ", " + b + ")";
+    var colorString = "rgb(" + r + ", " + g + ", " + b + ")";
     return colorString;
 }
