@@ -662,7 +662,8 @@ function onKeyDown(event) {
 
         var newCircle = new Path.Circle(point, radius);
         // <!-- give newCircle a random color -->
-        newCircle.fillColor = soundMap[event.key].color;
+        // newCircle.fillColor = soundMap[event.key].color;
+        newCircle.fillColor = randomRgbColor();
         // <!-- add object to objects array -->
         objects.push(newCircle);
     }
