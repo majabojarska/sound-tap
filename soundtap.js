@@ -123,7 +123,7 @@ var soundMap = {
             src: ['audio/Guitar/perc1.mp3']
         })
     },
-    'x': { // TODO: Record skrrrr sample, add here
+    'x': {
         color: 'white',
         sound: new Howl({
             src: ['audio/Guitar/perc3.mp3']
