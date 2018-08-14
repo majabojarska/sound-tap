@@ -23,8 +23,8 @@
     "paper": "^0.11.5"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
+    // "babel-core": "^6.26.3",
+    // "babel-loader": "^7.1.5",
     "browser-sync": "^2.24.6",
     "css-loader": "^1.0.0",
     "extract-loader": "^2.0.1",
