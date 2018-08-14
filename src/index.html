@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta property="og:image" content="" />
     <meta property="og:title" content="Tap the sounds!" />
@@ -7,13 +8,16 @@
     <meta property="og:url" content="http://mayobytes.pl/soundtap" />
     <meta property="og:site_name" content="memes" />
     <meta property="og:description" content="Clicky sound samples">
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SoundTap</title>
-    
-    <!-- <link rel="stylesheet" href="./src/style.css"> -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
     <!-- Howler -->
     <script src="howler.js"></script>
     <!-- Paper.js -->
@@ -23,7 +27,26 @@
     <!-- bundle -->
     <script src="main-bundle.js" type="text/javascript"></script>
 </head>
+
 <body>
-    <canvas id="myCanvas" resize></canvas>
+    <div class="wrapper-main">
+        <canvas id="myCanvas" resize></canvas>
+        <div id="about-button" class="js-fade">
+            <i class="fas fa-question-circle"></i>
+        </div>
+        <div class="about-wrapper" id="about-wrapper-id">
+            <div class="about-box">
+                <span id="about-close">
+                    <i class="times-circle"></i>
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fuga non magnam officiis blanditiis
+                    facilis itaque. Consectetur assumenda minus omnis tempora unde voluptates, debitis fugiat ex laboriosam
+                    magnam fugit nemo nisi eaque ab excepturi. Quod officiis excepturi impedit velit animi totam amet omnis
+                    quam. Molestias tempora dolore ut quo fugiat.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./about.js"></script>
 </body>
+
 </html>
