@@ -642,7 +642,6 @@ var soundMap = {
             src: ['audio/Guitar/thump1.mp3']
         })
     }
-
 }
 
 Howler.volume(1);
@@ -652,23 +651,35 @@ var objects = [];
 function onKeyDown(event) {
     //console.log("onKeyDown | code " + event.character);
     if (soundMap[event.character].sound._src[0].length > 0) {
-        console.log("'" + event.character + "' : '" + soundMap[event.character].sound._src + "'");
-
+        // console.log("'" + event.character + "' : '" + soundMap[event.character].sound._src + "'");
+        
+        // Testing stereo panning
+        var randomStereoPan = Math.random()*2 - 1;
+        // console.log("new random stereo pan: " + randomStereoPan);
+        soundMap[event.character].sound.stereo(randomStereoPan);
         soundMap[event.character].sound.play();
-
+        
         var maxPoint = new Point(view.size._width, view.size._height);
         var randomPoint = Point.random();
         var point = maxPoint * randomPoint;
-        var radius = Math.random() * 500 + 10;
+        
+        // Set radius accordingly to window size
+        var maxRadius = (window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth);
+        var radius = Math.random() * maxRadius * 0.75 + 10;
 
         var newCircle = new Path.Circle(point, radius);
-        // <!-- give newCircle a random color -->
         // newCircle.fillColor = soundMap[event.key].color;
+        // <!-- give newCircle a random color -->
         newCircle.fillColor = randomRgbColor();
         // <!-- add object to objects array -->
         objects.push(newCircle);
     }
 }
+
+var mySound = new Howl({
+    src: ['']
+});
+
 
 function onFrame(event) {
     for (var i = 0; i < objects.length; i++) {
