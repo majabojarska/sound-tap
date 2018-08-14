@@ -654,7 +654,7 @@ function onKeyDown(event) {
         // console.log("'" + event.character + "' : '" + soundMap[event.character].sound._src + "'");
         
         // Testing stereo panning
-        var randomStereoPan = Math.random()*2 - 1;
+        var randomStereoPan = Math.random() - 0.5;
         // console.log("new random stereo pan: " + randomStereoPan);
         soundMap[event.character].sound.stereo(randomStereoPan);
         soundMap[event.character].sound.play();
@@ -684,7 +684,7 @@ var mySound = new Howl({
 function onFrame(event) {
     for (var i = 0; i < objects.length; i++) {
         objects[i].fillColor.hue += 1;
-        objects[i].scale(0.95);
+        objects[i].scale(0.96);
         if (objects[i].area < 1) {
             objects[i].remove();
             objects.splice(i, 1);
