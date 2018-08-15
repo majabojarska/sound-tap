@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 body {
@@ -24,6 +25,7 @@ canvas {
   height: 100%;
   background-color: #595959;
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+  /* background-image: url("img/black-linen.png"); */
   z-index: -1;
 }
 
@@ -44,7 +46,7 @@ ul li {
 
 ul li > * > * {
   transform-origin: center;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.1);
   transition: 0.1s ease-in;
 }
 
@@ -161,7 +163,7 @@ ul li > * > *:focus {
   }
 }
 @-ms-keyframes BackgroundAnimated {
-  < from {
+  from {
     background-position: 0 0;
   }
   to {
