@@ -27,30 +27,37 @@ canvas {
   z-index: -1;
 }
 
-/* about */
-#about-button {
-  /* display: block; */
+/* buttons */
+ul {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 0;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
   font-size: 28px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+}
+
+ul li > * > * {
+  transform-origin: center;
   color: rgba(255, 255, 255, 0.2);
   transition: 0.1s ease-in;
 }
 
-#about-button:hover,
-#about-button:focus {
-  font-size: 34px;
+ul li > * > *:hover,
+ul li > * > *:focus {
+  transform: scale(1.2);
   color: rgba(255, 255, 255, 0.6);
-  bottom: 17px;
-  right: 17px;
   transition: 0.1s ease-in;
 }
 
 .about-wrapper {
+  display: block;
   display: none;
-  /* opacity: 0; */
   position: fixed;
   z-index: 2;
   left: 0;
@@ -68,8 +75,17 @@ canvas {
   transform: translateY(-50%);
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #888;
+  border-top: 5px solid #888;
+  border-bottom: 5px solid #888;
   width: 100%;
+  min-height: 50%;
+}
+
+.about-box h1 {
+  /* text-transform: capitalize; */
+  font-family: "Luckiest Guy";
+  text-align: center;
+  font-size: 10vh;
 }
 
 #about-close {
@@ -103,5 +119,60 @@ canvas {
 @keyframes fadeOut {
   to {
     opacity: 0;
+  }
+}
+
+.bg-clip {
+  background-color: #566ce9;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  font-size: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Luckiest Guy";
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  -webkit-animation: BackgroundAnimated 15s linear infinite;
+  -moz-animation: BackgroundAnimated 15s linear infinite;
+  -ms-animation: BackgroundAnimated 15s linear infinite;
+  -o-animation: BackgroundAnimated 15s linear infinite;
+  animation: BackgroundAnimated 15s linear infinite;
+}
+@keyframes BackgroundAnimated {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@-webkit-keyframes BackgroundAnimated {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@-ms-keyframes BackgroundAnimated {
+  < from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@-moz-keyframes BackgroundAnimated {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
   }
 }
