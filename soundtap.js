@@ -542,45 +542,43 @@ var soundMap = {
 
 ///////////////////////////////////////////////////////////////////////
 
-// var MOVESPEED = 10;
-
-Howler.volume(1);
+// Howler.volume(1);
 
 var objects = [];
 
 function onKeyDown(event) {
   //console.log("onKeyDown | code " + event.character);
   if (soundMap[event.character].sound._src[0].length > 0) {
-    // console.log("'" + event.character + "' : '" + soundMap[event.character].sound._src + "'");
 
-    // Testing stereo panning
+    // Set random stereo panning
     var randomStereoPan = Math.random() - 0.5;
-    // console.log("new random stereo pan: " + randomStereoPan);
     soundMap[event.character].sound.stereo(randomStereoPan);
+    
+    // Play audio sample
     soundMap[event.character].sound.play();
 
+    // Create start and end points
     var maxPoint = new Point(view.size._width, view.size._height);
-    // var randomPoint = Point.random();
     var startPoint = maxPoint * Point.random();
     var endPoint = maxPoint * Point.random();
+
     // Set radius accordingly to window size
     var maxRadius =
       window.innerWidth > window.innerHeight
         ? window.innerHeight
         : window.innerWidth;
     var radius = Math.random() * maxRadius * 0.5 + 10;
-
+    
+    // Create new circle object
     var newCircle = new Path.Circle(startPoint, radius);
     newCircle.endPoint = endPoint;
-    var randomMoveSpeed = Math.random() * 5;
-    newCircle.moveSpeed = randomMoveSpeed;
-    var randomHueChangeSpeed = Math.random() * 2;
-    newCircle.hueChangeSpeed = randomHueChangeSpeed;
-    // <!-- give newCircle a predefined color -->
-    // newCircle.fillColor = soundMap[event.key].color;
-    // <!-- give newCircle a random color -->
+    newCircle.moveSpeed = Math.random() * 5;
+    newCircle.hueChangeSpeed = Math.random() * 2;
+    
+    // Give newCircle a random color
     newCircle.fillColor = randomRgbColor();
-    // <!-- add object to objects array -->
+    
+    // Add object to objects array
     objects.push(newCircle);
     // console.log(objects);
   }
@@ -592,24 +590,17 @@ function onFrame(event) {
     objects[i].fillColor.hue += objects[i].hueChangeSpeed;
     // Scale
     objects[i].scale(0.96);
-    // // Move towards end point
-    // var nextPoint = new Point(
-    //   objects[i]._position.x +
-    //     (objects[i].endPoint.x - objects[i]._position.x) * objects[i].moveSpeed,
-    //   objects[i]._position.y +
-    //     (objects[i].endPoint.y - objects[i]._position.y) * objects[i].moveSpeed
-    // );
+    // Move towards endPoint
     var nextPoint =
       objects[i]._position +
       (objects[i].endPoint - objects[i]._position) * objects[i].moveSpeed;
 
     objects[i]._position = nextPoint;
-
+    // Remove object from objects list if area smaller than 1
     if (objects[i].area < 1) {
       objects[i].remove();
       objects.splice(i, 1);
       i--;
-      // console.log(objects);
     }
   }
 }
