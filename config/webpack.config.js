@@ -7,15 +7,18 @@ module.exports = {
     mode: "development",
     output: {
         filename: "[name]-bundle.js",
-        path: path.resolve(__dirname, "../dist")
+        path: path.resolve(__dirname, "../dist"),
+        publicPath: "/"
     },
     devServer: {
         contentBase: "dist",
-        overlay: true
+        overlay: true,
+        stats: {
+            colors: true
+        },
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.css$/,
                 use: [{
                         loader: "style-loader"
@@ -27,8 +30,7 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                use: [
-                    {
+                use: [{
                         loader: "file-loader",
                         options: {
                             name: "[name].html"
@@ -38,10 +40,28 @@ module.exports = {
                         loader: "extract-loader"
                     },
                     {
-                        loader: "html-loader"
-                    },
+                        loader: "html-loader",
+                    }
                 ]
-            }
+            }, {
+                test: /\.(png|jpe?g|svg)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: 'img/[name].[ext]',
+                    }
+                }]
+            },
+            // {
+            //     test: /\.(png|jpe?g|svg)$/,
+            //     use: [{
+            //         loader: 'url-loader',
+            //         options: {
+            //             limit: 8000, // Convert images < 8kb to base64 strings
+            //             name: 'img/[name].[ext]',
+            //         }
+            //     }]
+            // }
         ]
     }
 }
