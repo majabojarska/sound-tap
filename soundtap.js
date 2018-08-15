@@ -551,7 +551,7 @@ function onKeyDown(event) {
   if (soundMap[event.character].sound._src[0].length > 0) {
 
     // Set random stereo panning
-    var randomStereoPan = Math.random() - 0.5;
+    var randomStereoPan = Math.random()*1.5 - 0.75;
     soundMap[event.character].sound.stereo(randomStereoPan);
     
     // Play audio sample
