@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta property="og:image" content="" />
     <meta property="og:title" content="Tap the sounds!" />
@@ -7,22 +8,77 @@
     <meta property="og:url" content="http://mayobytes.pl/soundtap" />
     <meta property="og:site_name" content="memes" />
     <meta property="og:description" content="Clicky sound samples">
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SoundTap</title>
-    
-    <!-- bundle -->
-    <script src="main-bundle.js" type="text/javascript"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Luckiest+Guy|Ubuntu" rel="stylesheet">
+
     <!-- Howler -->
-    <script type="text/javascript" src="howler.js"></script>
+    <script src="./assets/js/howler.js"></script>
     <!-- Paper.js -->
-    <script type="text/javascript" src="paper.js"></script>
-    <!-- <script type="text/paperscript" canvas="myCanvas" src="./paperscript.js"></script> -->
-    <script src="soundtap.js" canvas="myCanvas" type="text/paperscript"></script>
+    <script src="./assets/js/paper.js" type="text/javascript" ></script>
+    <!-- soundtap script - paperscript -->
+    <script src="./assets/js/soundtap.js" type="text/paperscript" canvas="myCanvas" ></script>
+    <!-- bundle -->
+    <script src="./assets/js/main-bundle.js" type="text/javascript"></script>
 </head>
+
 <body>
-    <canvas id="myCanvas" resize></canvas>
+    <div class="wrapper-main">
+        <canvas id="myCanvas" resize></canvas>
+        <ul>
+            <li>
+                <div id="about-button">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/majabojarska/SoundTap" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="about-wrapper" id="about-wrapper-id">
+            <div class="about-box">
+                <div id="about-close">
+                    <i class=" fas fa-times "></i>
+                </div>
+                <h1 class="bg-clip">SoundTap</h1>
+                <div class="flex-container">
+                    <div class="flex-cell">
+                        <i class="fas fa-keyboard"></i>
+                        <p class="bg-clip">Use your keyboard</p>
+                    </div>
+                    <div class="flex-cell">
+                        <i class="fas fa-music"></i>
+                        <p class="bg-clip">Create music</p>
+                    </div>
+                    <div class="flex-cell">
+                        <i class="fas fa-headphones-alt"></i>
+                        <p class="bg-clip">Headphones recommended</p>
+                    </div>
+                    <div class="flex-cell">
+                        <a href="https://github.com/majabojarska/SoundTap" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://github.com/majabojarska/SoundTap" target="_blank">
+                            <p class="bg-clip">Find out more on GitHub</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./about.js"></script>
 </body>
+
 </html>
