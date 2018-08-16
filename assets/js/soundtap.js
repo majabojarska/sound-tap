@@ -385,7 +385,7 @@ var soundMap = {
       src: [""]
     })
   },
-  $: {
+  "$": {
     sound: new Howl({
       src: [""]
     })
