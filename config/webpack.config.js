@@ -4,7 +4,7 @@ module.exports = {
   entry: {
     main: "./src/main.js"
   },
-  mode: "development",
+  mode: "production",
   output: {
     filename: "assets/js/[name]-bundle.js",
     path: path.resolve(__dirname, "../dist"),
