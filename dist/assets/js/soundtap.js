@@ -5,132 +5,132 @@ var soundMap = {
   // Small-case letters
   q: {
     sound: new Howl({
-      src: ["../audio/Guitar/chord1.mp3"]
+      src: ["assets/audio/Guitar/chord1.mp3"]
     })
   },
   w: {
     sound: new Howl({
-      src: ["../audio/Guitar/chord3.mp3"]
+      src: ["assets/audio/Guitar/chord3.mp3"]
     })
   },
   e: {
     sound: new Howl({
-      src: ["../audio/Guitar/chord4.mp3"]
+      src: ["assets/audio/Guitar/chord4.mp3"]
     })
   },
   r: {
     sound: new Howl({
-      src: ["../audio/Guitar/chord5.mp3"]
+      src: ["assets/audio/Guitar/chord5.mp3"]
     })
   },
   t: {
     sound: new Howl({
-      src: ["../audio/Guitar/chord6.mp3"]
+      src: ["assets/audio/Guitar/chord6.mp3"]
     })
   },
   y: {
     sound: new Howl({
-      src: ["../audio/Leszek/fenk.mp3"]
+      src: ["assets/audio/Leszek/fenk.mp3"]
     })
   },
   u: {
     sound: new Howl({
-      src: ["../audio/Leszek/lup1.mp3"]
+      src: ["assets/audio/Leszek/lup1.mp3"]
     })
   },
   i: {
     sound: new Howl({
-      src: ["../audio/Leszek/picobello.mp3"]
+      src: ["assets/audio/Leszek/picobello.mp3"]
     })
   },
   o: {
     sound: new Howl({
-      src: ["../audio/Leszek/FesteB.mp3"]
+      src: ["assets/audio/Leszek/FesteB.mp3"]
     })
   },
   p: {
     sound: new Howl({
-      src: ["../audio/Leszek/pk1.mp3"]
+      src: ["assets/audio/Leszek/pk1.mp3"]
     })
   },
   a: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta1.mp3"]
+      src: ["assets/audio/Guitar/penta1.mp3"]
     })
   },
   s: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta2.mp3"]
+      src: ["assets/audio/Guitar/penta2.mp3"]
     })
   },
   d: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta3.mp3"]
+      src: ["assets/audio/Guitar/penta3.mp3"]
     })
   },
   f: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta4.mp3"]
+      src: ["assets/audio/Guitar/penta4.mp3"]
     })
   },
   g: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta5.mp3"]
+      src: ["assets/audio/Guitar/penta5.mp3"]
     })
   },
   h: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta6.mp3"]
+      src: ["assets/audio/Guitar/penta6.mp3"]
     })
   },
   j: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta7.mp3"]
+      src: ["assets/audio/Guitar/penta7.mp3"]
     })
   },
   k: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta8.mp3"]
+      src: ["assets/audio/Guitar/penta8.mp3"]
     })
   },
   l: {
     sound: new Howl({
-      src: ["../audio/Guitar/penta9.mp3"]
+      src: ["assets/audio/Guitar/penta9.mp3"]
     })
   },
   z: {
     sound: new Howl({
-      src: ["../audio/Guitar/perc1.mp3"]
+      src: ["assets/audio/Guitar/perc1.mp3"]
     })
   },
   x: {
     sound: new Howl({
-      src: ["../audio/Guitar/perc3.mp3"]
+      src: ["assets/audio/Guitar/perc3.mp3"]
     })
   },
   c: {
     sound: new Howl({
-      src: ["../audio/Guitar/perc2.mp3"]
+      src: ["assets/audio/Guitar/perc2.mp3"]
     })
   },
   v: {
     sound: new Howl({
-      src: ["../audio/Guitar/mute1.mp3"]
+      src: ["assets/audio/Guitar/mute1.mp3"]
     })
   },
   b: {
     sound: new Howl({
-      src: ["../audio/Guitar/bend1.mp3"]
+      src: ["assets/audio/Guitar/bend1.mp3"]
     })
   },
   n: {
     sound: new Howl({
-      src: ["../audio/Guitar/chord2.mp3"]
+      src: ["assets/audio/Guitar/chord2.mp3"]
     })
   },
   m: {
     sound: new Howl({
-      src: ["../audio/Guitar/misc3.mp3"]
+      src: ["assets/audio/Guitar/misc3.mp3"]
     })
   },
 
@@ -183,7 +183,7 @@ var soundMap = {
   },
   P: {
     sound: new Howl({
-      src: ["../audio/Leszek/pk1_echo.mp3"]
+      src: ["assets/audio/Leszek/pk1_echo.mp3"]
     })
   },
   A: {
@@ -238,7 +238,7 @@ var soundMap = {
   },
   X: {
     sound: new Howl({
-      src: ["../audio/Guitar/perc4.mp3"]
+      src: ["assets/audio/Guitar/perc4.mp3"]
     })
   },
   C: {
@@ -271,52 +271,52 @@ var soundMap = {
   // Numbers
   "1": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass2.mp3"]
+      src: ["assets/audio/Guitar/bass2.mp3"]
     })
   },
   "2": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass3.mp3"]
+      src: ["assets/audio/Guitar/bass3.mp3"]
     })
   },
   "3": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass4.mp3"]
+      src: ["assets/audio/Guitar/bass4.mp3"]
     })
   },
   "4": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass5.mp3"]
+      src: ["assets/audio/Guitar/bass5.mp3"]
     })
   },
   "5": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass6.mp3"]
+      src: ["assets/audio/Guitar/bass6.mp3"]
     })
   },
   "6": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass7.mp3"]
+      src: ["assets/audio/Guitar/bass7.mp3"]
     })
   },
   "7": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass8.mp3"]
+      src: ["assets/audio/Guitar/bass8.mp3"]
     })
   },
   "8": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass9.mp3"]
+      src: ["assets/audio/Guitar/bass9.mp3"]
     })
   },
   "9": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass10.mp3"]
+      src: ["assets/audio/Guitar/bass10.mp3"]
     })
   },
   "0": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass11.mp3"]
+      src: ["assets/audio/Guitar/bass11.mp3"]
     })
   },
 
@@ -422,7 +422,7 @@ var soundMap = {
   },
   "-": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass12.mp3"]
+      src: ["assets/audio/Guitar/bass12.mp3"]
     })
   },
   _: {
@@ -437,17 +437,17 @@ var soundMap = {
   },
   "=": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass13.mp3"]
+      src: ["assets/audio/Guitar/bass13.mp3"]
     })
   },
   "[": {
     sound: new Howl({
-      src: ["../audio/Guitar/disson1.mp3"]
+      src: ["assets/audio/Guitar/disson1.mp3"]
     })
   },
   "]": {
     sound: new Howl({
-      src: ["../audio/Guitar/disson2.mp3"]
+      src: ["assets/audio/Guitar/disson2.mp3"]
     })
   },
   "{": {
@@ -467,12 +467,12 @@ var soundMap = {
   },
   ";": {
     sound: new Howl({
-      src: ["../audio/Guitar/penta10.mp3"]
+      src: ["assets/audio/Guitar/penta10.mp3"]
     })
   },
   "'": {
     sound: new Howl({
-      src: ["../audio/Guitar/penta11.mp3"]
+      src: ["assets/audio/Guitar/penta11.mp3"]
     })
   },
   '"': {
@@ -482,7 +482,7 @@ var soundMap = {
   },
   "\\": {
     sound: new Howl({
-      src: ["../audio/Guitar/penta12.mp3"]
+      src: ["assets/audio/Guitar/penta12.mp3"]
     })
   },
   "|": {
@@ -492,7 +492,7 @@ var soundMap = {
   },
   ",": {
     sound: new Howl({
-      src: ["../audio/Guitar/misc6.mp3"]
+      src: ["assets/audio/Guitar/misc6.mp3"]
     })
   },
   "<": {
@@ -502,7 +502,7 @@ var soundMap = {
   },
   ".": {
     sound: new Howl({
-      src: ["../audio/Guitar/misc11.mp3"]
+      src: ["assets/audio/Guitar/misc11.mp3"]
     })
   },
   ">": {
@@ -512,7 +512,7 @@ var soundMap = {
   },
   "/": {
     sound: new Howl({
-      src: ["../audio/Guitar/harmonics1.mp3"]
+      src: ["assets/audio/Guitar/harmonics1.mp3"]
     })
   },
   "?": {
@@ -527,7 +527,7 @@ var soundMap = {
   },
   "`": {
     sound: new Howl({
-      src: ["../audio/Guitar/bass1.mp3"]
+      src: ["assets/audio/Guitar/bass1.mp3"]
     })
   },
 
@@ -535,7 +535,7 @@ var soundMap = {
   // Whitespace
   " ": {
     sound: new Howl({
-      src: ["../audio/Guitar/thump1.mp3"]
+      src: ["assets/audio/Guitar/thump1.mp3"]
     })
   }
 };
