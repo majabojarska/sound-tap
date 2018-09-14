@@ -210,6 +210,7 @@ ul li > * > *:focus {
   -ms-animation: BackgroundAnimated 15s linear infinite;
   -o-animation: BackgroundAnimated 15s linear infinite;
   animation: BackgroundAnimated 15s linear infinite;
+  padding-top: 50px;
 }
 @keyframes BackgroundAnimated {
   from {
