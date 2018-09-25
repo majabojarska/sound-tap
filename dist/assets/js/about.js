@@ -5,8 +5,24 @@ var aboutBox = document.getElementById("about-wrapper-id");
 // Box closing button - font-awesome times symbol
 var closeButton = document.getElementById("about-close");
 
+// const myStorage = window.localStorage;
+
+console.log(localStorage.getItem('hasSeenHelp'));
+
+if(!localStorage.getItem('hasSeenHelp')){
+    console.log("Adding class hvr-buzz-out");
+    aboutButton.classList.add("hvr-buzz-out");
+}
+else{
+    console.log("Adding class button");
+    aboutButton.classList.add("button");
+}
+
 aboutButton.onclick = function () {
     console.log("Question mark pressed, opening about box.");
+    localStorage.setItem('hasSeenHelp', true);
+    aboutButton.classList.remove("hvr-buzz-out");
+    aboutButton.classList.add("button");
     openAboutBox();
 }
 
